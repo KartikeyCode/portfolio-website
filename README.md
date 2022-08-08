@@ -1,5 +1,5 @@
 
-# Porfolio Website
+# Portfolio Website
 Intro:
 My name is Kartikey and I am a beginner in the development field lol.
 
