@@ -15,7 +15,7 @@
     --clr-accent:#fff;  
 
     --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
+    --fs-h2: 2rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 }
@@ -46,7 +46,11 @@ img {
     scroll-snap-type: y mandatory;
     overflow-y:scroll;
     height: 100vh;
-
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.container::-webkit-scrollbar{
+    display:none;
 }
 section{
     height: 100vh;
@@ -114,4 +118,27 @@ h3 {font-size: var(--fs-h3);}
 }
 .ab{
     color: #fff;
+}
+ion-icon {
+    font-size: 10vh;
+  }
+.socials{
+    color: #fff;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.twit:hover {
+    color: #30D5C8; 
+}
+.spac{
+    margin-left: 30px;
+}
+.lin:hover{
+    color:#0072b1
+}
+.got:hover{
+    color: #FF1493
+}
+.resume:hover{
+    color:#4B0082
 }
