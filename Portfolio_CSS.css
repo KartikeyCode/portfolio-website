@@ -1,19 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap');
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: rgb(0,0,0);
+    --clr-accent:#fff;  
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+@media (min-width: 800px) {
+    :root{
+
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
 html{
     min-height: 100%;
     overflow: hidden;
+    font-size: 90.5%;
 }
 body{
     background-color: black;
     height: calc(100vh - 8em);
-    padding: 2em;
+    padding: 1em;
 }
-
+.breaker{
+    border-bottom: 5px solid #fff;
+    display: block;
+    transform: translate(0px, -50px);
+}
 .line{
     position: relative;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    width: 6.35em;
+    width: 6.87em;
     border-right: 2px solid #fff;
     font-size: 300%;
     text-align: start;
@@ -21,6 +54,7 @@ body{
     overflow: hidden;transform: translateY(-50%);
 
 }
+
 .KK{
     animation: anime 2s steps(40) 1s 1 normal both,
     Cursor 500ms steps(40) infinite normal;
@@ -28,10 +62,11 @@ body{
 
 @keyframes anime{
     from{width: 0;}
-    to{width:6.35em;}
+    to{width:6.87em;}
 }
 
 @keyframes Cursor{
     from{border-right-color: #fff;}
     to{border-right-color: transparent;}
 }
+h1 { font-size: 2.4rem;}
