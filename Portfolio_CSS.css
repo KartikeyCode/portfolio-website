@@ -138,9 +138,6 @@ ion-icon {
 .twit:hover {
     color: #30D5C8; 
 }
-.spac{
-    margin-left: 30px;
-}
 .lin:hover{
     color:#0072b1
 }
@@ -149,4 +146,10 @@ ion-icon {
 }
 .resume:hover{
     color:#4B0082
+}
+.swagger{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
 }
