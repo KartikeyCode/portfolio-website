@@ -121,8 +121,14 @@ h3 {font-size: var(--fs-h3);}
 .sub{
     color:#fff
 }
+
+.Project{
+    margin-top: 3rem;
+}
+
 .proj{
     color: #fff;
+    font-size: 3rem;
 }
 .ab{
     color: #fff;
@@ -137,7 +143,7 @@ ion-icon {
 }
 .twit:hover {
     color: #30D5C8; 
-}
+} 
 .lin:hover{
     color:#0072b1
 }
@@ -152,4 +158,11 @@ ion-icon {
     flex-wrap: wrap;
     justify-content: left;
     gap: 20px;
+}
+.about{
+    color: #fff;
+    margin-top: 3rem;
+}
+.smol{
+    width: 10%;
 }
