@@ -160,6 +160,7 @@ ion-icon {
     gap: 20px;
 }
 .about{
+    font-size: 2rem;
     color: #fff;
     margin-top: 3rem;
 }
