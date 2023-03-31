@@ -160,10 +160,16 @@ ion-icon {
     gap: 20px;
 }
 .about{
-    font-size: 4vh;
+    font-size: 6vh;
     color: #fff;
     margin-top: 3rem;
 }
 .smol{
     width: 10%;
 }
+
+@media screen and (max-width: 480px) {
+    .about{
+        font-size: 3vh;
+    }
+  }
