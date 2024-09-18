@@ -29,49 +29,51 @@
     }
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
 body{
     background: var(--clr-dark);
     margin: 0;
-    padding: 2em;
+    padding: 2.5em;
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    overflow: hidden;
+    
 }
 img {
     display: block;
     max-width: 100%;
 }
-.container{
-    scroll-snap-type: y mandatory;
-    overflow-y:scroll;
-    height: 100vh;
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: var(--clr-dark);
+    padding: 3rem;
 }
-.container::-webkit-scrollbar-track{
-    background-color: black;
-    border: 4px solid white;
-    background-clip: content-box;
-}
-.container::-webkit-scrollbar{
-    width: 15px;
-    background-color: black;
-}
-.container::-webkit-scrollbar-thumb{
-    background-color: white;
-    border: 1px solid white;
-}
+
 section{
     height: 100vh;
-    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
     scroll-snap-align: start;
 }
 strong{
     font-weight: var(--fw-bold);
 }
 .breaker{
-    border-bottom: 5px solid #fff;
+    width: 20rem;
+    border-bottom: 4px solid #fff;
     display: block;
-    transform: translate(0px, -20px);
 }
 .line{
     position: relative;
@@ -79,13 +81,13 @@ strong{
     font-family: 'Poppins', sans-serif;
     width: 6.87em;
     border-right: 2px solid #fff;
-    font-size: 300%;
+    font-size: 250%;
     text-align: start;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);
 
 }
+
 
 .KK{
     animation: anime 2s steps(40) 1s 1 normal both,
@@ -94,7 +96,7 @@ strong{
 
 @keyframes anime{
     from{width: 0;}
-    to{width:6.87em;}
+    to{width:7.25em;}
 }
 
 @keyframes Cursor{
@@ -154,11 +156,14 @@ ion-icon {
     color:#4B0082
 }
 .swagger{
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     gap: 20px;
 }
+
+
 .about{
     font-size: 6vh;
     color: #fff;
@@ -169,7 +174,11 @@ ion-icon {
 }
 
 @media screen and (max-width: 480px) {
+    nav{
+        padding: 0.2rem;
+    }
     .about{
         font-size: 3vh;
     }
+    
   }
