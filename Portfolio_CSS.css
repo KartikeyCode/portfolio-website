@@ -14,7 +14,7 @@
     --clr-dark: rgb(0,0,0);
     --clr-accent:#fff;  
 
-    --fs-h1: 3rem;
+    --fs-h1: 2rem;
     --fs-h2: 2rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
@@ -22,7 +22,7 @@
 @media (min-width: 800px) {
     :root{
 
-        --fs-h1: 4.5rem;
+        --fs-h1: 3rem;
         --fs-h2: 2.5rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -56,7 +56,7 @@ nav {
     z-index: 1000;
     top: 0;
     background-color: var(--clr-dark);
-    padding: 3rem;
+    padding: 1rem;
 }
 
 section{
@@ -128,10 +128,17 @@ h3 {font-size: var(--fs-h3);}
     margin-top: 3rem;
 }
 
+.Projects{
+    padding-top: 3rem;
+}
+
 .proj{
     color: #fff;
     font-size: 2rem;
 }
+
+
+
 .ab{
     color: #fff;
 }
@@ -165,7 +172,7 @@ ion-icon {
 
 
 .about{
-    font-size: 6vh;
+    font-size: xx-large;
     color: #fff;
     margin-top: 3rem;
 }
@@ -178,7 +185,7 @@ ion-icon {
         padding: 0.2rem;
     }
     .about{
-        font-size: 3vh;
+        font-size: x-large;
     }
     
   }
